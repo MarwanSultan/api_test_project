@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  api-tests:
+    build: .
+    container_name: api_test_runner
+    volumes:
+      - .:/app
+      - ./reports:/app/reports
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: pytest tests --html=reports/report.html --self-contained-html
