@@ -62,7 +62,6 @@ The tests are executed automatically when the Docker container runs. To run test
 
 
 ## 📁 Project Structure
-
 ```plaintext
 api_test_project/
 ├── Dockerfile
